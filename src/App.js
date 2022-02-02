@@ -25,8 +25,8 @@ function App() {
         <Route exact path="/">
           <Home characters={characters} />
         </Route>
-        <Route path="/characters/:name">
-          <CharacterDetail />
+        <Route path="/characters/:characterName">
+          <CharacterDetail characters={characters} />
         </Route>
       </Switch>
     </BrowserRouter>
