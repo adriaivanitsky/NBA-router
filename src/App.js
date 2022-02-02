@@ -21,6 +21,7 @@ function App() {
   if (loading) return <h1>Loading...</h1>;
   return (
     <BrowserRouter>
+      <h1>Avatar The Last Airbender</h1>
       <Switch>
         <Route exact path="/">
           <Home characters={characters} />
