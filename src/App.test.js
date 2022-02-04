@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { MemoryRouter } from 'react-router-dom';
 
-test('renders learn react link', async () => {
+test('renders avatar the last airbender', async () => {
   render(<App />);
-  const linkElement = await screen.findByText(/Avatar The Last Airbender/i);
-  expect(linkElement).toBeInTheDocument();
+  const heading = await screen.findByRole('heading', { name: /Avatar The Last Airbender/i });
+  expect(heading).toBeInTheDocument();
 });
+
+//behavioral tests
